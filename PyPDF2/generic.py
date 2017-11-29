@@ -1063,6 +1063,8 @@ class Destination(TreeObject):
             self[NameObject("/Left")], = args
         elif typ in ["/Fit", "/FitB"]:
             pass
+        elif typ == 0:
+            pass
         else:
             raise utils.PdfReadError("Unknown Destination Type: %r" % typ)
 
